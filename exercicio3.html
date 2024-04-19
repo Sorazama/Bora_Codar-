@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+        let valor1 = parseFloat(prompt("Digite o primeiro valor: "))
+        let valor2 = parseFloat(prompt("Digite o segundo valor: "))
+        let valor3 = parseFloat(prompt("Digite o terceiro valor: "))
+
+        let maior
+
+        if(valor1 > valor2 && valor1 > valor3){
+            maior = valor1
+        } else if(valor2 > valor1 && valor2 > valor3) {
+            maior = valor2
+        } else {
+            maior = valor3
+        }
+
+        alert("O maior valor é: " + maior)
+    </script>
+</body>
+</html>

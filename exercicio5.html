@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let valores = [];
+
+        for (let i = 0; i < 10; i++) {
+            let valor = parseFloat(prompt("Digite um valor:"));
+            valores.push(valor);
+            soma += valor;
+        }
+
+        let media = soma / 10;
+
+        let valoresInformados = "Valores informados:";
+        for (let i = 0; i < valores.length; i++) {
+            valoresInformados += "\n" + valores[i];
+        }
+
+        let mensagem = valoresInformados + "\n\nmedia: " + media.toFixed(2);
+        alert(mensagem);
+
+
+
+    </script>
+</body>
+</html>
